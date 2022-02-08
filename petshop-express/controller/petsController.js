@@ -1,6 +1,8 @@
+var modelPets = require('../model/pets.json')
+
 const petsController = {
     pets: (req,res)=>{
-        res.render('../model/pets.json')
+        res.send(modelPets)
     }
 }
 
