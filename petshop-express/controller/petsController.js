@@ -10,6 +10,10 @@ const petsController = {
     cadastraPets: (req,res) => {
         let pet = req.body
         modelPets.push(pet)
+        res.redirect('listaPets')
+    },
+    listaPets: (req,res) => {
+        res.render('listaPets', {lPets: modelPets})
     }
 }
 

@@ -8,6 +8,7 @@
   {
     "name" : "Barksalot",
     "species" : "Dog",
+    "favFoods" : ["wet food", "dry food", "<strong>any</strong> food"],
     "birthYear" : 2008
   },
   {
