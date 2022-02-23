@@ -12,6 +12,11 @@ const servicosController = {
         let servico = req.body
         modelServicos.push(servico)
         res.redirect('/')
+    },
+    servicosId: (req,res) => {
+        let id = req.params.id
+        let servico = modelServicos.find(s => s.id == id)
+        res.render('servicosId', {servico})
     }
 }
 
